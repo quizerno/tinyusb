@@ -120,6 +120,11 @@
   #if CFG_TUD_BTH
     #include "class/bth/bth_device.h"
   #endif
+
+  #if CFG_TUH_SBC
+    #include "class/sbc/sbc_host.h"
+  #endif
+
 #else
   #ifndef tud_int_handler
   #define tud_int_handler(...)
